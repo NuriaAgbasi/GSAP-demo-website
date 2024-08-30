@@ -1,0 +1,49 @@
+_duration_
+How long an animation takes to finish.
+eg:If you want an image to fade in slowly over 2 seconds, you set duration: 2.
+
+_y_
+Controls how far up or down an element moves.eg:If you want a box to slide up from below the screen, you could set y: 100.
+
+_ease_
+Controls how an animation starts and ends, like whether it speeds up or slows down.eg:If you want a ball to bounce and slow down at the end, you'd use an ease setting like ease: "bounce.out".
+
+_opacity_
+Controls how see-through an element is.
+eg: If you want a text to fade out until it’s invisible, you’d animate opacity from 1 to 0.
+
+_delay_
+How long to wait before starting an animation.
+eg: If you want a button to appear 3 seconds after the page loads, you’d set delay: 3.
+
+_stagger_
+Makes a group of elements animate one after the other, instead of all at once.
+eg: If you have a row of images and you want them to fade in one by one, you’d use stagger to create that effect.
+
+_gsap.from()_
+Starts an element from a certain state and animates it to its current position.
+eg: If you want a box to start off-screen and slide into view, you’d use gsap.from() to define its starting position off-screen.
+
+_gsap.to()_
+Animates an element from where it is now to a new position or state. eg: If you want a button to grow larger when clicked, you’d use gsap.to() to animate the button’s size.
+
+_gsap.fromTo()_
+Combines both from and to by defining both where an element starts and where it ends. eg:If you want a header to start off as small and transparent, then grow big and visible, you’d use gsap.fromTo().
+
+_rotation_
+Rotates an element. eg: If you want an arrow to spin around when clicked, you’d animate its rotation property.
+
+_scale_
+Changes the size of an element.eg: If you want an image to zoom in when hovered over, you’d use scale to enlarge it.
+
+_timeline_
+Lets you chain multiple animations together in a specific order. eg: If you want a box to first move, then rotate, and finally fade out, you’d use a timeline to organize those animations.
+
+_Absolute Delay, Relative Delay, and Delay '<.5'_
+Different ways to delay an animation start, either by a set time or relative to another animation. eg: If you want an element to appear 0.5 seconds after another animation starts, you’d use "<.5" in a timeline.
+
+_timeline.reverse()_
+Plays all the animations in the timeline backward. eg: If you want to reverse an animation when a button is clicked again, you’d use timeline.reverse().
+
+_timeline.timeScale()_
+Speeds up or slows down the entire timeline. eg:If you want to create a slow-motion effect, you’d set timeline.timeScale(0.5).
